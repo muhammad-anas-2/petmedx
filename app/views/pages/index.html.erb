@@ -1,0 +1,58 @@
+<body style="overflow: visible;">
+
+<div id="loader" style="display: none;">
+  <div class="loader-container">
+<!--    <img src="images/load.png" alt="" class="loader-site spinner">-->
+    <%= image_tag('load.png', alt: "", class: "loader-site spinner") %>
+  </div>
+</div>
+
+<div id="wrapper">
+  <div class="topbar clearfix">
+    <div class="container">
+      <div class="row-fluid">
+        <div class="col-md-6 text-left">
+          <p>
+            <strong>Call us:</strong> +90 543 123 45 67 &nbsp;&nbsp;
+            <strong>Email:</strong> <a href="mailto:info@yoursite.com">info@yoursite.com</a>
+          </p>
+        </div><!-- end left -->
+        <div class="col-md-6 text-right">
+          <div class="social">
+            <a href="#" data-tooltip="tooltip" data-placement="bottom" title="Facebook"><i class="fa fa-facebook"></i></a>
+            <a href="#" data-tooltip="tooltip" data-placement="bottom" title="Twitter"><i class="fa fa-twitter"></i></a>
+            <a href="#" data-tooltip="tooltip" data-placement="bottom" title="Google Plus"><i class="fa fa-google-plus"></i></a>
+            <a href="#" data-tooltip="tooltip" data-placement="bottom" title="Linkedin"><i class="fa fa-linkedin"></i></a>
+            <a href="#" data-tooltip="tooltip" data-placement="bottom" title="Youtube"><i class="fa fa-youtube"></i></a>
+            <a href="#" data-tooltip="tooltip" data-placement="bottom" title="Pinterest"><i class="fa fa-pinterest"></i></a>
+          </div><!-- end social -->
+        </div><!-- end left -->
+      </div><!-- end row -->
+    </div><!-- end container -->
+  </div><!-- end topbar -->
+
+  <%= render 'pages/index partials/header' %>
+
+  <%= render 'pages/index partials/slider_section' %>
+
+  <%= render 'pages/index partials/services' %>
+
+  <%= render 'pages/index partials/clinic_department' %>
+
+  <%= render 'pages/index partials/vets' %>
+
+  <%= render 'pages/index partials/our_gallery' %>
+
+  <%= render 'pages/index partials/pricing' %>
+
+  <%= render 'pages/index partials/testimonials' %>
+
+  <%= render 'pages/index partials/blog' %>
+
+  <%= render 'pages/index partials/appointment_section' %>
+
+  <%= render 'pages/index partials/footer' %>
+
+  <%= render 'pages/index partials/copyright' %>
+
+</div><!-- end wrapper -->
