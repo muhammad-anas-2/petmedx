@@ -4,4 +4,6 @@ Rails.application.routes.draw do
   get  'vets/our_vets'
   get  'appointments/appointment_form'
   get  'contacts/contact'
+  get  'galleries/main_page'
+
 end
