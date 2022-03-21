@@ -1,0 +1,241 @@
+<body style="overflow: visible;">
+
+<div id="loader" style="display: none;">
+  <div class="loader-container">
+    <!--    <img src="images/load.png" alt="" class="loader-site spinner">-->
+    <%= image_tag('load.png', alt: '', class: 'loader-site spinner') %>
+  </div>
+</div>
+  <div id="wrapper">
+    <%= render 'pages/index partials/topbar' %>
+
+    <%= render 'pages/index partials/header' %>
+    <section class="section banner p1" >
+    </section>
+
+    <div class="page-title grey">
+      <div class="container">
+        <div class="title-area pull-left">
+          <h2>Our Gallery <small>Listed all our awesome gallery styles</small></h2>
+          <div class="bread">
+            <ol class="breadcrumb">
+              <li><a href="#">Home</a></li>
+              <li class="active">Gallery</li>
+            </ol>
+          </div><!-- end bread -->
+        </div><!-- /.pull-right -->
+        <div class="search pull-right">
+          <form>
+            <div class="input-group">
+              <input class="form-control" name="s" type="search" placeholder=" Search... ">
+              <span class="input-group-btn">
+                                <button type="submit" class="btn btn-primary"><i class="fa fa-search"></i></button>
+                            </span>
+            </div><!-- /input-group -->
+          </form>
+        </div><!-- /.pull-right -->
+      </div>
+    </div>
+
+          <section class="section white">
+            <div class="container-fluid">
+              <div class="text-center clearfix">
+                <nav class="portfolio-filter">
+                  <ul>
+                    <li><a href="#" data-filter="*"><i class="fa fa-filter"></i> All</a></li>
+                    <li><a href="#" data-filter=".cat1">Vets</a></li>
+                    <li><a href="#" data-filter=".cat2">Pets</a></li>
+                    <li><a href="#" data-filter=".cat3">Clinics</a></li>
+                  </ul>
+                </nav>
+              </div><!-- end text-center -->
+
+              <div id="fourcol" class="portfolio isotope" style="position: relative; overflow: hidden; height: 699px;">
+                <div class="pitem entry item-w1 item-h2 cat1 isotope-item" style="width: 263px; height: 521px; position: absolute; left: 0px; top: 0px; transform: translate3d(0px, 0px, 0px);">
+          <!--        <img src="upload/gallery_01.jpg" alt="" class="img-responsive">-->
+                      <%= image_tag('upload/gallery_01.jpg', alt: '', class: 'img-responsive') %>
+                  <div class="magnifier">
+                    <div class="buttons">
+                      <a data-rel="prettyPhoto" href="upload/gallery_01.jpg" class="st" rel="bookmark">
+          <!--            <a <%#= image_tag('upload/gallery_01.jpg', class: 'st', rel: 'bookmark', data: {rel: 'prettyPhoto'} ) %>>-->
+                        <span class="fa fa-search"></span></a>
+          <!--            <a class="st" rel="bookmark" href="gallery-single.html"><span class="fa fa-link"></span></a>-->
+                    </div>
+                  </div><!-- end magnifier -->
+                </div>
+
+                <div class="pitem entry item-w1 item-h2 cat2 isotope-item" style="width: 263px; height: 521px; position: absolute; left: 0px; top: 0px; transform: translate3d(263px, 0px, 0px);">
+          <!--        <img src="upload/gallery_02.jpg" alt="" class="img-responsive">-->
+                  <%= image_tag('upload/gallery_02.jpg', alt: '', class: 'img-responsive') %>
+                  <div class="magnifier">
+                    <div class="buttons">
+                      <a data-rel="prettyPhoto" href="upload/gallery_02.jpg" class="st" rel="bookmark"><span class="fa fa-search"></span></a>
+                      <a class="st" rel="bookmark" href="gallery-single.html"><span class="fa fa-link"></span></a>
+                    </div>
+                  </div><!-- end magnifier -->
+                </div>
+
+                <div class="pitem entry item-w1 item-h2 cat2 isotope-item" style="width: 263px; height: 521px; position: absolute; left: 0px; top: 0px; transform: translate3d(526px, 0px, 0px);">
+          <!--        <img src="upload/gallery_03.jpg" alt="" class="img-responsive">-->
+                      <%= image_tag('upload/gallery_03.jpg', alt: '', class: 'img-responsive') %>
+
+                  <div class="magnifier">
+                    <div class="buttons">
+                      <a data-rel="prettyPhoto" href="upload/gallery_03.jpg" class="st" rel="bookmark"><span class="fa fa-search"></span></a>
+                      <a class="st" rel="bookmark" href="gallery-single.html"><span class="fa fa-link"></span></a>
+                    </div>
+                  </div><!-- end magnifier -->
+                </div>
+
+                <div class="pitem entry item-w1 item-h2 cat3 isotope-item" style="width: 263px; height: 521px; position: absolute; left: 0px; top: 0px; transform: translate3d(789px, 0px, 0px);">
+          <!--        <img src="upload/gallery_04.jpg" alt="" class="img-responsive">-->
+                      <%= image_tag('upload/gallery_04.jpg', alt: '', class: 'img-responsive') %>
+
+                  <div class="magnifier">
+                    <div class="buttons">
+                      <a data-rel="prettyPhoto" href="upload/gallery_04.jpg" class="st" rel="bookmark"><span class="fa fa-search"></span></a>
+                      <a class="st" rel="bookmark" href="gallery-single.html"><span class="fa fa-link"></span></a>
+                    </div>
+                  </div><!-- end magnifier -->
+                </div>
+
+                <div class="pitem entry item-w1 item-h2 cat1 isotope-item" style="width: 263px; height: 521px; position: absolute; left: 0px; top: 0px; transform: translate3d(1052px, 0px, 0px);">
+          <!--        <img src="upload/gallery_05.jpg" alt="" class="img-responsive">-->
+                      <%= image_tag('upload/gallery_05.jpg', alt: '', class: 'img-responsive') %>
+
+                  <div class="magnifier">
+                    <div class="buttons">
+                      <a data-rel="prettyPhoto" href="upload/gallery_01.jpg" class="st" rel="bookmark"><span class="fa fa-search"></span></a>
+                      <a class="st" rel="bookmark" href="gallery-single.html"><span class="fa fa-link"></span></a>
+                    </div>
+                  </div><!-- end magnifier -->
+                </div>
+
+                <div class="pitem entry item-w1 item-h2 cat1 isotope-item" style="width: 263px; height: 521px; position: absolute; left: 0px; top: 0px; transform: translate3d(0px, 233px, 0px);">
+          <!--        <img src="upload/gallery_06.jpg" alt="" class="img-responsive">-->
+                  <%= image_tag('upload/gallery_06.jpg', alt: '', class: 'img-responsive') %>
+
+                  <div class="magnifier">
+                    <div class="buttons">
+                      <a data-rel="prettyPhoto" href="upload/gallery_01.jpg" class="st" rel="bookmark"><span class="fa fa-search"></span></a>
+                      <a class="st" rel="bookmark" href="gallery-single.html"><span class="fa fa-link"></span></a>
+                    </div>
+                  </div><!-- end magnifier -->
+                </div>
+
+                <div class="pitem entry item-w1 item-h2 cat2 isotope-item" style="width: 263px; height: 521px; position: absolute; left: 0px; top: 0px; transform: translate3d(263px, 233px, 0px);">
+          <!--        <img src="upload/gallery_07.jpg" alt="" class="img-responsive">-->
+                      <%= image_tag('upload/gallery_07.jpg', alt: '', class: 'img-responsive') %>
+
+                  <div class="magnifier">
+                    <div class="buttons">
+                      <a data-rel="prettyPhoto" href="upload/gallery_02.jpg" class="st" rel="bookmark"><span class="fa fa-search"></span></a>
+                      <a class="st" rel="bookmark" href="gallery-single.html"><span class="fa fa-link"></span></a>
+                    </div>
+                  </div><!-- end magnifier -->
+                </div>
+
+                <div class="pitem entry item-w1 item-h2 cat2 isotope-item" style="width: 263px; height: 521px; position: absolute; left: 0px; top: 0px; transform: translate3d(526px, 233px, 0px);">
+          <!--        <img src="upload/gallery_08.jpg" alt="" class="img-responsive">-->
+                      <%= image_tag('upload/gallery_08.jpg', alt: '', class: 'img-responsive') %>
+
+                  <div class="magnifier">
+                    <div class="buttons">
+                      <a data-rel="prettyPhoto" href="upload/gallery_03.jpg" class="st" rel="bookmark"><span class="fa fa-search"></span></a>
+                      <a class="st" rel="bookmark" href="gallery-single.html"><span class="fa fa-link"></span></a>
+                    </div>
+                  </div><!-- end magnifier -->
+                </div>
+
+                <div class="pitem entry item-w1 item-h2 cat3 isotope-item" style="width: 263px; height: 521px; position: absolute; left: 0px; top: 0px; transform: translate3d(789px, 233px, 0px);">
+          <!--        <img src="upload/gallery_09.jpg" alt="" class="img-responsive">-->
+                      <%= image_tag('upload/gallery_09.jpg', alt: '', class: 'img-responsive') %>
+
+                  <div class="magnifier">
+                    <div class="buttons">
+                      <a data-rel="prettyPhoto" href="upload/gallery_04.jpg" class="st" rel="bookmark"><span class="fa fa-search"></span></a>
+                      <a class="st" rel="bookmark" href="gallery-single.html"><span class="fa fa-link"></span></a>
+                    </div>
+                  </div><!-- end magnifier -->
+                </div>
+
+                <div class="pitem entry item-w1 item-h2 cat1 isotope-item" style="width: 263px; height: 521px; position: absolute; left: 0px; top: 0px; transform: translate3d(1052px, 233px, 0px);">
+          <!--        <img src="upload/gallery_10.jpg" alt="" class="img-responsive">-->
+                      <%= image_tag('upload/gallery_10.jpg', alt: '', class: 'img-responsive') %>
+
+                  <div class="magnifier">
+                    <div class="buttons">
+                      <a data-rel="prettyPhoto" href="upload/gallery_01.jpg" class="st" rel="bookmark"><span class="fa fa-search"></span></a>
+                      <a class="st" rel="bookmark" href="gallery-single.html"><span class="fa fa-link"></span></a>
+                    </div>
+                  </div><!-- end magnifier -->
+                </div>
+
+                <div class="pitem entry item-w1 item-h2 cat1 isotope-item" style="width: 263px; height: 521px; position: absolute; left: 0px; top: 0px; transform: translate3d(0px, 466px, 0px);">
+          <!--        <img src="upload/gallery_11.jpg" alt="" class="img-responsive">-->
+                      <%= image_tag('upload/gallery_11.jpg', alt: '', class: 'img-responsive') %>
+
+                  <div class="magnifier">
+                    <div class="buttons">
+                      <a data-rel="prettyPhoto" href="upload/gallery_01.jpg" class="st" rel="bookmark"><span class="fa fa-search"></span></a>
+                      <a class="st" rel="bookmark" href="gallery-single.html"><span class="fa fa-link"></span></a>
+                    </div>
+                  </div><!-- end magnifier -->
+                </div>
+
+                <div class="pitem entry item-w1 item-h2 cat2 isotope-item" style="width: 263px; height: 521px; position: absolute; left: 0px; top: 0px; transform: translate3d(263px, 466px, 0px);">
+          <!--        <img src="upload/gallery_12.jpg" alt="" class="img-responsive">-->
+                      <%= image_tag('upload/gallery_12.jpg', alt: '', class: 'img-responsive') %>
+
+                  <div class="magnifier">
+                    <div class="buttons">
+                      <a data-rel="prettyPhoto" href="upload/gallery_02.jpg" class="st" rel="bookmark"><span class="fa fa-search"></span></a>
+                      <a class="st" rel="bookmark" href="gallery-single.html"><span class="fa fa-link"></span></a>
+                    </div>
+                  </div><!-- end magnifier -->
+                </div>
+
+                <div class="pitem entry item-w1 item-h2 cat2 isotope-item" style="width: 263px; height: 521px; position: absolute; left: 0px; top: 0px; transform: translate3d(526px, 466px, 0px);">
+          <!--        <img src="upload/gallery_13.jpg" alt="" class="img-responsive">-->
+                      <%= image_tag('upload/gallery_13.jpg', alt: '', class: 'img-responsive') %>
+
+                  <div class="magnifier">
+                    <div class="buttons">
+                      <a data-rel="prettyPhoto" href="upload/gallery_03.jpg" class="st" rel="bookmark"><span class="fa fa-search"></span></a>
+                      <a class="st" rel="bookmark" href="gallery-single.html"><span class="fa fa-link"></span></a>
+                    </div>
+                  </div><!-- end magnifier -->
+                </div>
+
+                <div class="pitem entry item-w1 item-h2 cat3 isotope-item" style="width: 263px; height: 521px; position: absolute; left: 0px; top: 0px; transform: translate3d(789px, 466px, 0px);">
+          <!--        <img src="upload/gallery_14.jpg" alt="" class="img-responsive">-->
+                      <%= image_tag('upload/gallery_14.jpg', alt: '', class: 'img-responsive') %>
+
+                  <div class="magnifier">
+                    <div class="buttons">
+                      <a data-rel="prettyPhoto" href="upload/gallery_04.jpg" class="st" rel="bookmark"><span class="fa fa-search"></span></a>
+                      <a class="st" rel="bookmark" href="gallery-single.html"><span class="fa fa-link"></span></a>
+                    </div>
+                  </div><!-- end magnifier -->
+                </div>
+
+                <div class="pitem entry item-w1 item-h2 cat1 isotope-item" style="width: 263px; height: 521px; position: absolute; left: 0px; top: 0px; transform: translate3d(1052px, 466px, 0px);">
+          <!--        <img src="upload/gallery_15.jpg" alt="" class="img-responsive">-->
+                      <%= image_tag('upload/gallery_15.jpg', alt: '', class: 'img-responsive') %>
+
+                  <div class="magnifier">
+                    <div class="buttons">
+                      <a data-rel="prettyPhoto" href="upload/gallery_01.jpg" class="st" rel="bookmark"><span class="fa fa-search"></span></a>
+                      <a class="st" rel="bookmark" href="gallery-single.html"><span class="fa fa-link"></span></a>
+                    </div>
+                  </div><!-- end magnifier -->
+                </div>
+              </div><!-- end row -->
+            </div><!-- /container -->
+          </section>
+       <%= render 'pages/index partials/footer' %>
+       <!-- end footer -->
+
+       <%= render 'pages/index partials/copyright' %>
+</div>
+</body>
