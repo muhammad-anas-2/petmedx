@@ -23,9 +23,11 @@ default: &default
 
 development:
   <<: *default
-  database: petmedx_development
+  database: postgres
   username: postgres
   password: anas
+  host: localhost
+  port: 5432
 
   # The specified database role being used to connect to postgres.
   # To create additional roles in postgres see `$ createuser --help`.
