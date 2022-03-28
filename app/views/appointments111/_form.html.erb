@@ -1,0 +1,76 @@
+<%= form_for @appointment, html: {method: "post"} do |f| %>
+
+  <section class="section white">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-8 col-md-offset-2 col-xs-12">
+        <div class="appoform-wrapper">
+
+            <!--          <form method="post">-->
+            <header class="form-header">
+              <h3>Appointment Form</h3>
+            </header>
+            <div class="post-body-form text-center">
+              <p>In order to provide better service to you, PetVet Veterinary Clinic<br>
+                It is working with the appointment system. Please fill in the following form completely.</p>
+            </div>
+            <fieldset class="row-fluid appoform">
+              <div class="col-md-6">
+                <%= f.label :time, "Time and Date", :class => 'sr-only' %>
+<!--                <label class="sr-only">Appointment time</label>-->
+<!--                <input id="datepicker" type="text" placeholder="Appointment time" class="form-control hasDatepicker">-->
+              </div>
+              <div class="col-md-6">
+<!--                <label class="sr-only">Your name</label>-->
+                <%= f.label 'Name', :class => 'sr-only' %>
+<!--                <input type="text" placeholder="Your full name *" class="form-control">-->
+                <%= f.text_field :name, :class => 'sr-only' %>
+              </div>
+              <div class="col-md-6">
+<!--                <label class="sr-only">Phone number</label>-->
+                <%= f.label :phone_number, :class => 'sr-only' %>
+<!--                <input type="text" placeholder="Phone number *" class="form-control">-->
+                <%= f.text_field :phone_number, :class => 'sr-only' %>
+              </div>
+              <div class="col-md-6">
+<!--                <label class="sr-only">Email address</label>-->
+                <%= f.label :email, :class => 'sr-only' %>
+<!--                <input type="email" placeholder="Email address *" class="form-control">-->
+                <%= f.text_field :email, :class => 'sr-only' %>
+              </div>
+<!--              <div class="col-md-6">-->
+<!--                <label class="sr-only">Select Vet</label>-->
+<!--                <select class="selectpicker bs-select-hidden" data-style="btn-white">-->
+<!--                  <option value="12">-- Select Vet --</option>-->
+<!--                  <option value="amanda">Vet : Amanda JOE</option>-->
+<!--                  <option value="mark">Vet : Mark DOE</option>-->
+<!--                </select><div class="btn-group bootstrap-select"><button type="button" class="btn dropdown-toggle btn-white" data-toggle="dropdown" title="-- Select Vet --"><span class="filter-option pull-left">-- Select Vet --</span>&nbsp;<span class="caret"></span></button><div class="dropdown-menu open"><ul class="dropdown-menu inner" role="menu"><li data-original-index="0" class="selected"><a tabindex="0" class="" style="" data-tokens="null"><span class="text">-- Select Vet --</span><span class="glyphicon glyphicon-ok check-mark"></span></a></li><li data-original-index="1"><a tabindex="0" class="" style="" data-tokens="null"><span class="text">Vet : Amanda JOE</span><span class="glyphicon glyphicon-ok check-mark"></span></a></li><li data-original-index="2"><a tabindex="0" class="" style="" data-tokens="null"><span class="text">Vet : Mark DOE</span><span class="glyphicon glyphicon-ok check-mark"></span></a></li></ul></div></div>-->
+<!--              </div>-->
+<!--              <div class="col-md-6">-->
+<!--                <label class="sr-only">Select Service</label>-->
+<!--                <select class="selectpicker bs-select-hidden" data-style="btn-white">-->
+<!--                  <option value="12">-- Select Service --</option>-->
+<!--                  <option value="12">Pet Hotel</option>-->
+<!--                  <option value="13">Pet Barber</option>-->
+<!--                  <option value="15">Pet Clinic</option>-->
+<!--                  <option value="14">Pet Support</option>-->
+<!--                </select><div class="btn-group bootstrap-select"><button type="button" class="btn dropdown-toggle btn-white" data-toggle="dropdown" title="-- Select Service --"><span class="filter-option pull-left">-- Select Service --</span>&nbsp;<span class="caret"></span></button><div class="dropdown-menu open"><ul class="dropdown-menu inner" role="menu"><li data-original-index="0" class="selected"><a tabindex="0" class="" style="" data-tokens="null"><span class="text">-- Select Service --</span><span class="glyphicon glyphicon-ok check-mark"></span></a></li><li data-original-index="1"><a tabindex="0" class="" style="" data-tokens="null"><span class="text">Pet Hotel</span><span class="glyphicon glyphicon-ok check-mark"></span></a></li><li data-original-index="2"><a tabindex="0" class="" style="" data-tokens="null"><span class="text">Pet Barber</span><span class="glyphicon glyphicon-ok check-mark"></span></a></li><li data-original-index="3"><a tabindex="0" class="" style="" data-tokens="null"><span class="text">Pet Clinic</span><span class="glyphicon glyphicon-ok check-mark"></span></a></li><li data-original-index="4"><a tabindex="0" class="" style="" data-tokens="null"><span class="text">Pet Support</span><span class="glyphicon glyphicon-ok check-mark"></span></a></li></ul></div></div>-->
+<!--              </div>-->
+
+              <div class="col-md-12">
+										<textarea placeholder="Add extra notes" class="form-control">
+										</textarea>
+              </div>
+              <div class="col-md-12">
+<!--                <button type="reset" class="btn btn-primary btn-block btn-lg">Send Now</button>-->
+                <%= f.submit nil , :class => 'btn btn-primary btn-block btn-lg' %>
+              </div>
+            </fieldset>
+            <!--            </form>-->
+
+        </div><!-- end form-container -->
+      </div><!-- end col -->
+    </div><!-- end row -->
+  </div><!-- end container -->
+</section><!-- end section -->
+<% end %>

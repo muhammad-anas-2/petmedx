@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  phone_number: MyString
+  email: MyString
+  time: 2022-03-24 15:31:34
+
+two:
+  name: MyString
+  phone_number: MyString
+  email: MyString
+  time: 2022-03-24 15:31:34

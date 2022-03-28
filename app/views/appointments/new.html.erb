@@ -1,0 +1,99 @@
+<body style="overflow: visible;">
+
+<div id="loader" style="display: none;">
+  <div class="loader-container">
+    <!--    <img src="images/load.png" alt="" class="loader-site spinner">-->
+    <%= image_tag('load.png', alt: '', class: 'loader-site spinner') %>
+  </div>
+</div>
+
+<div id="wrapper">
+  <%= render 'pages/index partials/topbar' %>
+
+  <%= render 'pages/index partials/header' %>
+
+
+  <section class="section banner p1" >
+
+  </section><!-- end section -->
+
+  <div class="page-title grey">
+    <div class="container">
+      <div class="title-area pull-left">
+        <h2>Appointment Form <small>Get a premium appointment now!</small></h2>
+        <div class="bread">
+          <ol class="breadcrumb">
+            <li><a href="#">Home</a></li>
+            <li class="active">Appointment Form</li>
+          </ol>
+        </div><!-- end bread -->
+      </div><!-- /.pull-right -->
+      <div class="search pull-right">
+        <form>
+          <div class="input-group">
+            <input class="form-control" name="s" type="search" placeholder=" Search... ">
+            <span class="input-group-btn">
+                                <button type="submit" class="btn btn-primary"><i class="fa fa-search"></i></button>
+                            </span>
+          </div><!-- /input-group -->
+        </form>
+      </div><!-- /.pull-right -->
+    </div>
+  </div><!-- end page-title -->
+
+  <%#= render 'appointments/form' %>
+  <%= render 'form', appointment: @appointment %>
+
+  <!--  form section-->
+
+  <%= render 'appointments111/shared/team_carousel' %>
+  <!-- end section -->
+
+  <%= render 'pages/index partials/appointment_section' %>
+  <!-- end section -->
+
+  <%= render 'pages/index partials/footer' %>
+  <!-- end footer -->
+
+  <%= render 'pages/index partials/copyright' %>
+  <!-- end section -->
+</div><!-- end wrapper -->
+
+</body>
+
+
+
+
+<!--<p id="notice"><%#= notice %></p>-->
+
+<!--<h1>Appointments</h1>-->
+
+<!--<table>-->
+<!--  <thead>-->
+<!--    <tr>-->
+<!--      <th>Name</th>-->
+<!--      <th>Phone number</th>-->
+<!--      <th>Email</th>-->
+<!--      <th>Time</th>-->
+<!--      <th colspan="3"></th>-->
+<!--    </tr>-->
+<!--  </thead>-->
+
+<!--  <tbody>-->
+<%# @appointments.each do |appointment| %>
+<!--      <tr>-->
+<!--        <td><%#= appointment.name %></td>-->
+<!--        <td><%#= appointment.phone_number %></td>-->
+<!--        <td><%#= appointment.email %></td>-->
+<!--        <td><%#= appointment.time %></td>-->
+<!--        <td><%#= link_to 'Show', appointment %></td>-->
+<!--        <td><%#= link_to 'Edit', edit_appointment_path(appointment) %></td>-->
+<!--        <td><%#= link_to 'Destroy', appointment, method: :delete, data: { confirm: 'Are you sure?' } %></td>-->
+<!--      </tr>-->
+<%# end %>
+<!--  </tbody>-->
+<!--</table>-->
+
+<!--<br>-->
+
+<%#= link_to 'New Appointment', new_appointment_path %>

@@ -1,0 +1,82 @@
+<section class="section white" xmlns="http://www.w3.org/1999/html" xmlns="http://www.w3.org/1999/html">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-8 col-md-offset-2 col-xs-12">
+        <div class="appoform-wrapper">
+
+          <%= form_for(appointment , html: {method: "post"}) do |f| %>
+            <% if appointment.errors.any? %>
+              <div id="error_explanation">
+                <h2><%= pluralize(appointment.errors.count, "error") %> prohibited this appointment from being saved:</h2>
+
+                <ul>
+                <% appointment.errors.full_messages.each do |message| %>
+                  <li><%= message %></li>
+                <% end %>
+                </ul>
+              </div>
+            <% end %>
+            <header class="form-header">
+              <h3>Appointment Form</h3>
+            </header>
+            <div class="post-body-form text-center">
+              <p>In order to provide better service to you, PetVet Veterinary Clinic<br>
+                It is working with the appointment system. Please fill in the following form completely.</p>
+            </div>
+
+            <fieldset class="row-fluid appoform">
+                  <div class="field col-md-6">
+
+                    <%= f.label :name, class: 'sr-only' %>
+                    <%= f.text_field :name, placeholder: 'Your full name', class: 'form-control' %>
+                  </div>
+
+                  <div class="field col-md-6">
+                    <%= f.label :phone_number, class: 'sr-only'  %>
+                    <%= f.text_field :phone_number, placeholder: 'Phone Number', class: 'form-control' %>
+                  </div>
+
+                  <div class="field col-md-6">
+                    <%= f.label :email , class: 'sr-only'%>
+                    <%= f.text_field :email, placeholder: 'Your email address', class: 'form-control' %>
+                  </div>
+
+<!--                  <div class="field col-md-6">-->
+                    <%#= f.label :time, class: 'sr-only' %>
+                    <%#= f.datetime_select :time, placeholder: 'Date & Time', class: 'form-control' %>
+<!--                  </div>-->
+
+              <div class="field col-md-6">
+                <%= f.label :time ,'Date', :class => 'date-select'%>
+                <!-- Rails expects time_select when dealing with ActiveRecord forms -->
+<!--                <div class="col-lg-5">-->
+                  <%#= time_select :appointment, :time, {:class => "form-control" } %>
+<!--                </div>-->
+                  <%= date_select :appointment, :time, :class => "date-select"   , placeholder: 'Date'%>
+<!--                <div class="col-lg-2">-->
+                  <%#= f.time_zone_select :time_change, ActiveSupport::TimeZone.all.sort, default: "Pacific Time (US & Canada)" %>
+<!--                </div>-->
+                <%#=f.error_span(:time) %>
+              </div>
+
+
+
+
+              <div class="col-md-12">
+										<div class="form-control">
+                    </div>
+              </div>
+
+                  <div class="actions col-md-12 ">
+                    <%= f.submit nil , :class => 'btn btn-primary btn-block btn-lg' %>
+                  </div>
+            </fieldset>
+          <% end %>
+
+
+
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
