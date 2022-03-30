@@ -14,4 +14,11 @@ class Appointment < ApplicationRecord
   validates :email, presence: true,
             uniqueness: { case_sensitive: false }, length: { maximum: 100 },
             format: { with: VALID_EMAIL_REGEX }
+  validate :date_cannot_be_in_the_past
+  def date_cannot_be_in_the_past
+    if time.present? && time < Date.today
+      errors.add(:time, "can't be in the past")
+    end
+  end
+
 end

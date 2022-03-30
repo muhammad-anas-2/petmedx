@@ -33,7 +33,7 @@
 
                   <div class="field col-md-6">
                     <%= f.label :phone_number, class: 'sr-only'  %>
-                    <%= f.text_field :phone_number, placeholder: 'Phone Number', class: 'form-control' %>
+                    <%= f.text_field :phone_number, placeholder: 'Phone Number i.e. 03001234567', class: 'form-control' %>
                   </div>
 
                   <div class="field col-md-6">
@@ -52,7 +52,7 @@
 <!--                <div class="col-lg-5">-->
                   <%#= time_select :appointment, :time, {:class => "form-control" } %>
 <!--                </div>-->
-                  <%= date_select :appointment, :time, :class => "date-select"   , placeholder: 'Date'%>
+                  <%= date_select :appointment, :time, :class => "date-select"   , placeholder: 'Date', start_year: Date.today.year, :end_year => Date.today.year + 3%>
 <!--                <div class="col-lg-2">-->
                   <%#= f.time_zone_select :time_change, ActiveSupport::TimeZone.all.sort, default: "Pacific Time (US & Canada)" %>
 <!--                </div>-->
