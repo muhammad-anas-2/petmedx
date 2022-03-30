@@ -3,8 +3,12 @@ class Appointment < ApplicationRecord
   before_save { self.email = email.downcase }
 
 
-  validates :name, presence: true
-  validates :phone_number, presence: true
+  validates :name, presence: true, format: { :with => /\A[a-zA-Z]+(?: [a-zA-Z]+)?\z/}
+
+  # validates :phone_number, presence: true
+  validates :phone_number,:presence => true,
+            :numericality => true,
+            :length => { :minimum => 11, :maximum => 11 }
   validates :time, presence: true
   VALID_EMAIL_REGEX = /\A[\w+\-.]+@[a-z\d\-.]+\.[a-z]+\z/i
   validates :email, presence: true,
