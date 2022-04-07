@@ -45,9 +45,15 @@
   <body>
       <%= yield %>
 
-      <a href="https://api.whatsapp.com/send?phone=923100448242&text=Hello!%21%20" class="float" target="_blank">
-        <i class="fa fa-whatsapp my-float"></i>
-      </a>
+<!--      <a href="https://api.whatsapp.com/send?phone=923100448242&text=Hello!%21%20" class="float" target="_blank">-->
+<!--        <i class="fa fa-whatsapp my-float"></i>-->
+<!--      </a>-->
+<!--    <a <%#= link_to nil, "https://api.whatsapp.com/send?phone=923100448242&text=Hello!%21%20" , class: "float", target: "_blank" %>>-->
+<!--      <i class="fa fa-whatsapp my-float"></i>-->
+<!--    </a>-->
 
+      <%= link_to "https://api.whatsapp.com/send?phone=923100448242&text=Hello!%21%20", class: "float", target: "_blank" do %>
+        <i class="fa fa-whatsapp my-float"></i>
+      <% end %>
   </body>
 </html>
