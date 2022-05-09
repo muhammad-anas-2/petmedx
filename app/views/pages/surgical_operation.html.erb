@@ -1,0 +1,62 @@
+
+<body style="overflow: visible;">
+
+<div id="loader" style="display: none;">
+  <div class="loader-container">
+    <!--    <img src="images/load.png" alt="" class="loader-site spinner">-->
+    <%= image_tag('load.png', alt: "", class: "loader-site spinner") %>
+  </div>
+</div>
+
+<div id="wrapper">
+  <div class="topbar clearfix">
+    <div class="container">
+      <div class="row-fluid">
+        <div class="col-md-6 text-left">
+          <p>
+            <!--            <strong>Call us:</strong> +90 543 123 45 67 &nbsp;&nbsp;-->
+            <!--            <strong>Email:</strong> <a href="mailto:info@yoursite.com">info@yoursite.com</a>-->
+          </p>
+        </div><!-- end left -->
+        <div class="col-md-6 text-right">
+          <div class="social">
+            <a><%= link_to 'https://www.facebook.com/PETMEDx ', title: 'Facebook' do %><i class="fa fa-facebook"></i>
+              <% end %>
+            </a>
+            <a><%= link_to 'https://www.twitter.com ', title: 'Twitter' do %><i class="fa fa-twitter"></i>
+              <% end %>
+            </a>
+            <a><%= link_to 'https://www.youtube.com/ ', title: 'Youtube' do %><i class="fa fa-youtube"></i>
+              <% end %>
+            </a>
+            <!--            <a href="#" data-tooltip="tooltip" data-placement="bottom" title="Twitter"><i class="fa fa-twitter"></i></a>-->
+            <!--            <a href="#" data-tooltip="tooltip" data-placement="bottom" title="Google Plus"><i class="fa fa-google-plus"></i></a>-->
+            <!--            <a href="#" data-tooltip="tooltip" data-placement="bottom" title="Linkedin"><i class="fa fa-linkedin"></i></a>-->
+            <!--            <a href="#" data-tooltip="tooltip" data-placement="bottom" title="Youtube"><i class="fa fa-youtube"></i></a>-->
+            <!--            <a href="#" data-tooltip="tooltip" data-placement="bottom" title="Pinterest"><i class="fa fa-pinterest"></i></a>-->
+          </div><!-- end social -->
+        </div><!-- end left -->
+      </div><!-- end row -->
+    </div><!-- end container -->
+  </div><!-- end topbar -->
+
+  <%= render 'pages/index partials/header' %>
+
+  <div class="entry-main">
+    <header class="entry-header">
+      <h1 class="entry-title">Surgical Operations</h1>
+    </header>
+    <div class="entry-content">
+    <p style="text-align: justify;">
+      <!--    <img class="size-medium wp-image-65 alignleft" src="http://www.gvhospitals.com/wp-content/uploads/2016/10/General-Veterinary-Hospital-Lahore-Animal-Surgery-300x221.jpg" alt="general-veterinary-hospital-lahore-animal-surgery" width="300" height="221" srcset="http://www.gvhospitals.com/wp-content/uploads/2016/10/General-Veterinary-Hospital-Lahore-Animal-Surgery-300x221.jpg 300w, http://www.gvhospitals.com/wp-content/uploads/2016/10/General-Veterinary-Hospital-Lahore-Animal-Surgery.jpg 476w" sizes="(max-width: 300px) 100vw, 300px">-->
+      <%= image_tag('rrrr.jpg', class: 'size-medium wp-image-65 alignleft', size: '(max-width: 300px) 100vw, 300px') %>
+      Treatments and problems regarding surgery only available in General Veterinary Hospital’s head office. Well developed Operation Theater and Advanced Surgical Treatment facilities are available. The anesthesia and pre-operative forms are available before going to any major and minor surgeries. We tried our level best to maintain highly hygiene conditions in operation theater. We believe in simplifying the complex issues of surgeries. Highly qualified and certified surgeons are also available to deal with C-section and birth difficulty problems of female animals.</p>
+    </div>
+  </div>
+
+
+
+
+
+</div><!-- end wrapper -->
+</body>
